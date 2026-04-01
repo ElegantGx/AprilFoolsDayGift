@@ -29,7 +29,6 @@ public class MyWindow {
                 button.addActionListener(e -> {
                     try {
                         Surprise.surprise();
-                        Surprise.printer();
                     } catch(Exception e1) {
                         System.out.println("未知错误，请重试");
                     }
