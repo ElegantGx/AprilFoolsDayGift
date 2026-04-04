@@ -15,11 +15,12 @@ public class Surprise {
                     errorCount++;
                 } else {
                     timer.stop();
+                    errorCount = 0;
                     try {
                         WindowsCloser.closer();
                         SystemCommand.command();
                     } catch (Exception e1) {
-                        System.out.print("未知错误，请重试");
+                        ErrorWindow.window("未知错误，请重试", true);
                     }
                 }
             }

@@ -17,7 +17,7 @@ public class PlayAudio {
                         try {
                             audioInputStream.close();
                         } catch (IOException e) {
-                            System.out.println("未知错误，请重试");
+                            ErrorWindow.window("未知错误，请重试", true);
                         }
                     }
                 });
